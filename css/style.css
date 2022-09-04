@@ -1,0 +1,271 @@
+/*sakino's workspace*/
+h3, h4{
+  margin: 5px 0px;
+}
+
+p{
+  font-size: 14px;
+}
+
+.topvisual{
+  margin-top: 80px;
+}
+
+.topvisual_ship{
+  text-align: center;
+}
+
+.topvisual_container{
+  display: flex;
+  align-items: center;
+  margin: 0% 10%;
+  gap: 20px;
+  margin-bottom: 5%;
+  justify-content: center;
+}
+
+.topvisual_img{
+  width: 175px;
+  height: 175px;
+}
+
+.topvisual_img img{
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 5%;
+}
+
+.topvisual_content{
+  text-align: left;
+}
+
+.topvisual_speech{
+  margin-top: 10px;
+  margin-bottom: 0px;
+  max-width: 700px;
+  height: 130px;
+  font-size: 14px;
+  overflow: scroll;
+}
+
+.goodbtn{
+  height: 150px;
+  width: 150px;
+  border: solid 1px #666;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart {
+  width: 100px;  /* 正方形を作る */
+  height: 100px; /* 正方形を作る */
+  position: relative;/* 基準位置とする */
+}
+.heart::before,
+.heart::after {
+  content: "";  /* 疑似要素に必須 */
+  width: 50%;   /* ハートの丸い部分の大きさにかかわる */
+  height: 80%;  /* ハートの高さにかかわる */
+  background: #E0548E; /* ハートの色 */
+  border-radius: 25px 25px 0 0; /* ハートの半円を生成 */
+  display: block; /* ブロック要素にする */
+  position: absolute; /* 相対位置に指定 */
+}
+.heart::before {
+  transform: rotate(-45deg); /* 左に回転 */
+  left: 14%;                 /* 左からの位置を指定 */
+}
+.heart::after {
+  transform: rotate(45deg);  /* 右に回転 */
+  right: 14%;                /* 右からの位置を指定 */
+}
+
+.fa-heart {
+  color: red;
+}
+.loveMe {
+  height: 440px;
+  width: 300px;
+  background-color: aqua;
+  margin: auto;
+  cursor: pointer;
+  max-width: 100%;
+  position: relative;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.loveMe .fa-heart {
+  position: absolute;
+  animation: grow 0.6s linear;
+  transform: translate(-50%, -50%) scale(0);
+}
+@keyframes grow {
+  to {
+    transform: translate(-50%, -50%) scale(10);
+    opacity: 0;
+  }}
+  
+/*miu's workspace*/
+.speechimg{
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.speech{
+  position: relative;
+}
+h3{
+  text-align: center;
+}
+.cp_container{
+  max-width: 700px;
+
+}
+.huspeech:not(:root){
+  margin: 0 auto;
+  background-color:red;
+}
+
+.birthcon{
+  display: flex;
+}
+main{
+  margin-top: 70px;
+}
+
+/*ボタン*/
+
+.cp_box *, .cp_box *:before, .cp_box *:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.cp_box {
+	position: relative;
+}
+.cp_box label {
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	width: 100%;
+	height: 100px; /* グラデーションの高さ */
+	cursor: pointer;
+	text-align: center;
+	background: linear-gradient(to bottom, rgba(250, 252, 252, 0) 0%, rgba(250, 252, 252, 0.95) 90%);
+}
+/* 開いた時にグラデーションを消す */
+.cp_box input:checked + label {
+	background: inherit; 
+}
+.cp_box label:after {
+	line-height: 2.5rem;
+	position: absolute;
+	z-index: 2;
+	bottom: 20px;
+	left: 50%;
+	width: 16rem;
+	font-family: FontAwesome;
+	content: '⬇︎'' 続きをよむ';
+	transform: translate(-50%, 0);
+	letter-spacing: 0.05em;
+	color: #ffffff;
+	border-radius: 20px;
+	background-color: rgba(27, 37, 56, 1);
+}
+.cp_box input {
+	display: none;
+}
+/* 開く前に見えている部分の高さ */
+.cp_box .cp_container {
+	overflow: hidden;
+	height: 250px; 
+	transition: all 0.5s;
+}
+/* display: none ; 閉じるボタンを消す場合解放 */
+.cp_box input:checked + label {
+
+}
+.cp_box input:checked + label:after {
+	font-family: FontAwesome;
+	content: '⬆︎'' 閉じる';
+}
+/* 閉じるボタンのbottomからの位置 */
+.cp_box input:checked ~ .cp_container {
+	height: auto;
+	padding-bottom: 80px; 
+	transition: all 0.5s;
+}
+
+
+/*fumiya's workspace*/
+ /* fumiya no common */
+img{
+  width: 100%;
+}
+h2{
+  text-align: center;
+}
+h3{
+  text-align: center;
+}
+/* a */
+
+.main_birthday{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.main_birthday>section{
+  width: 100%;
+  margin-top: 200px;
+}
+
+.calendar{
+ 
+  /* position: relative; */
+  padding-top: -1000px;
+  z-index: 2;
+}
+.calendar_box{
+  text-align: center;
+  background: url(/img/watermark.jpg);
+}
+.set{
+  display: block;
+  border: 1px solid;
+}
+.profile{
+  text-align: center;
+}
+
+.pro_img{
+  width: 200px;
+  margin: 0 auto;
+}
+.icon_box{
+  margin-top: 130px;
+}
+.boxes{
+  display: flex;
+  width: 100%;
+}
+.boxes>li{
+  height: 100px;
+}
+.boxes>li>img{
+  border-radius: 50%;
+  height: 200%;
+}
+/* .card_message{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.card{
+  margin-right: 5%;
+}
+.message{
+  align-items: center;
+  padding: 50px 0;
+} */

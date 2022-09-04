@@ -1,0 +1,62 @@
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+/* 全ページ共通のヘッダー */
+.header{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  align-items: center;
+  background-color: white;
+  display: flex;
+  padding: 15px 24px;
+}
+
+.header_logo{
+  width: 148px;
+}
+
+.header_nav{
+  margin-left: auto;
+}
+
+.header_nav_list{
+  display: flex;
+  gap: 32px;
+}
+
+.header_nav_item_link{
+  color: #666;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+}
+
+/* 全ページ共通のフッター */
+.footer{
+  border-top: solid 1px #eee;
+  margin-top: 80px;
+  text-align: center;
+  bottom: 0;
+}
+
+.footer_copyright{
+  padding: 38px 24px 33px;
+  border-top: solid 1px #eee;
+  font-family: "Plus Jakarta Sans", "Noto Sans JP", sans-serif;
+  font-size: 10px;
+  color: #666;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
