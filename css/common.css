@@ -1,0 +1,43 @@
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+.header{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  align-items: center;
+  background-color: white;
+  display: flex;
+  padding: 15px 24px;
+}
+
+.header_logo{
+  width: 148px;
+}
+
+.header_nav{
+  margin-left: auto;
+}
+
+.header_nav_list{
+  display: flex;
+  gap: 32px;
+}
+
+.header_nav_item_link{
+  color: #666;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+}
