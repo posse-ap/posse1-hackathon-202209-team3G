@@ -15,6 +15,10 @@
   counter.innerHTML = value;
 }
 
+{
+  const likes = document.('')
+}
+
 // miu
 
 // fumiya
