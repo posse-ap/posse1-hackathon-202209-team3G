@@ -247,12 +247,15 @@ h3{
   display: flex;
   width: 100%;
 }
-.boxes>li{
+.boxes>a>li{
   height: 100px;
 }
-.boxes>li>img{
+.boxes>li{
+  
+}
+.boxes>li>a>img{
   border-radius: 50%;
-  height: 200%;
+  height: 200px;
 }
 /* .card_message{
   display: flex;
@@ -269,6 +272,6 @@ h3{
 .indivisual{
   margin: 0 20%;
 }
-.indivisual>div{
+.indivisual>a>div{
   margin-top: 50px;
 }
