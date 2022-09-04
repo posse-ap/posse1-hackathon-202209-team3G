@@ -22,12 +22,14 @@
 // miu
 
 // fumiya
+""
   const all_profile = [
     {
       id: 1,
       
       nick_name: "さきの",
       birthday: "3月28日",
+
       
     },
     {
@@ -40,6 +42,7 @@
       id: 3,
       nick_name: "ふみや",
       birthday: "1月24日",
+      card: ""
 
     }
   ];
