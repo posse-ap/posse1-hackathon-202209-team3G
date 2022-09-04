@@ -1,5 +1,5 @@
 'use strict';
-
+// sakino
 {
   const state = { count: 0 };
   
@@ -14,3 +14,8 @@
   const value = localStorage.getItem('save');
   counter.innerHTML = value;
 }
+
+// miu
+
+// fumiya
+
