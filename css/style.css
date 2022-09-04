@@ -3,3 +3,29 @@
 /*miu's workspace*/
 
 /*fumiya's workspace*/
+ /* fumiya no common */
+img{
+  width: 100%;
+}
+h2{
+  text-align: center;
+}
+h3{
+  text-align: center;
+}
+/* a */
+.main_birthday{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.main_birthday>section{
+  width: 100%;
+  margin-top: 200px;
+}
+
+.calendar{
+  
+}
+.calendar_box{
+  text-align: center;
+}
