@@ -18,7 +18,7 @@
 // miu
 
 // fumiya
-git
+""
   const all_profile = [
     {
       id: 1,
