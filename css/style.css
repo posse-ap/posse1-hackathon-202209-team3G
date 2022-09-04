@@ -1,5 +1,53 @@
 /*sakino's workspace*/
+h3, h4{
+  margin: 5px 0px;
+}
 
+p{
+  font-size: 14px;
+}
+
+.topvisual{
+  margin-top: 80px;
+}
+
+.topvisual_ship{
+  text-align: center;
+}
+
+.topvisual_container{
+  display: flex;
+  align-items: center;
+  margin: 0% 10%;
+  gap: 20px;
+  margin-bottom: 5%;
+  justify-content: center;
+}
+
+.topvisual_img{
+  width: 175px;
+  height: 175px;
+}
+
+.topvisual_img img{
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 5%;
+}
+
+.topvisual_content{
+  text-align: left;
+}
+
+.topvisual_speech{
+  margin-top: 10px;
+  margin-bottom: 0px;
+  max-width: 700px;
+  height: 130px;
+  font-size: 14px;
+  overflow: scroll;
+}
 /*miu's workspace*/
 
 /*fumiya's workspace*/
