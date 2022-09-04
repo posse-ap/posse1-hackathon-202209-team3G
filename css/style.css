@@ -14,9 +14,10 @@ h3{
   text-align: center;
 }
 /* a */
+
 .main_birthday{
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .main_birthday>section{
   width: 100%;
@@ -24,8 +25,50 @@ h3{
 }
 
 .calendar{
-  
+ 
+  /* position: relative; */
+  padding-top: -1000px;
+  z-index: 2;
 }
 .calendar_box{
   text-align: center;
+  background: url(/img/watermark.jpg);
 }
+.set{
+  display: block;
+  border: 1px solid;
+}
+.profile{
+  text-align: center;
+}
+
+.pro_img{
+  width: 200px;
+  margin: 0 auto;
+}
+.icon_box{
+  margin-top: 130px;
+}
+.boxes{
+  display: flex;
+  width: 100%;
+}
+.boxes>li{
+  height: 100px;
+}
+.boxes>li>img{
+  border-radius: 50%;
+  height: 200%;
+}
+/* .card_message{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.card{
+  margin-right: 5%;
+}
+.message{
+  align-items: center;
+  padding: 50px 0;
+} */
