@@ -175,7 +175,7 @@ h1{
   margin-top: 100px;
 }
 main{
-  margin-top: 70px;
+  margin-top: 58px;
 }
 .main_birthday{
 padding-left: 10%;
@@ -183,9 +183,6 @@ padding-right: 10%;
 }
 h2{
   text-align: center;
-  
- 
-  
 }
 .harhar{
   color: white;
@@ -381,6 +378,7 @@ input[type=checkbox]:checked + .clicked:before{
 
 /*fumiya's workspace*/
 
+
  /* fumiya no common */
  
 .speech_pic{
@@ -424,6 +422,7 @@ img{
 .main_birthday{
   margin-left: 15%;
   margin-right: 15%;
+  background: url(/img/1700_free.jpg) repeat;
 }
 .main_birthday>section{
   width: 100%;
@@ -438,7 +437,7 @@ img{
 }
 .main_top_calendar{
   justify-content: center;
-  height: 1200px;
+  height: 900px;
 }
 .calendar_box{
   margin-left: 5%;
@@ -476,11 +475,18 @@ img{
   display: block;
   padding-top: 12%;
 }
+.boxes>li>img{
+  
+  
+  border-radius: 45%;
+  border: solid 5px coral !important;
+}
 
 .boxes>li>a>img{
   width: 100%;
   
   border-radius: 45%;
+  border: solid 5px coral !important;
 }
 .boxes>li>p{
   margin-bottom: 0;
@@ -490,8 +496,9 @@ img{
   margin-left: 5%;
 }
 .birthcon>ul>li>img{
+  width: 100%;
   border-radius: 45%;
-  
+  border: solid 5px coral;
 }
 .birthcon>ul>li{
   width: 12%;
@@ -515,7 +522,7 @@ img{
 
 
 .indivisual{
-  margin: 0 20%;
+  margin: 0 10%;
 }
 .indivisual>div{
   margin-top: 200px;
@@ -655,6 +662,11 @@ img{
     /* width: 70%; */
     margin-bottom: 10px
   }
+
+  .topvisual_ship :nth-child(even){
+    flex-direction: column-reverse;
+  }
+  
   
   /* バースデー */
   .icon_box{
@@ -673,19 +685,19 @@ img{
   
   html{
     width: 100%;
-  }
-}
+    background-image: url(/img/1700_free.jpg) repeat;
 
+  }
   .main_birthday{
     margin-left: 0;
     margin-right: 0;
   }
-  h2{
-    font-size: 10px;
-  }
+ 
   section{
     margin-bottom: 0;
   }
+}
+
 
 
 @media (max-width:480px)
