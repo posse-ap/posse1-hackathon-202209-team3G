@@ -76,6 +76,10 @@ p{
   align-items: center;
 }
 
+.likes_button:hover{
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+}
+
 .heart_btn{
   width: 15px;
   height: 15px;
