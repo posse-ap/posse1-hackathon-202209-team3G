@@ -105,6 +105,12 @@ p{
   display: none;
 }
 
+  /*フォームページ*/
+  .form h1{
+    text-align: center;
+  }
+
+
 /*miu's workspace*/
 .speechimg{
   display: flex;
