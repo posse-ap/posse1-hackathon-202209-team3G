@@ -76,12 +76,26 @@ p{
   align-items: center;
 }
 
+.likes_button:hover{
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+}
+
 .heart_btn{
   width: 15px;
   height: 15px;
   filter: brightness(0) invert(1);
 }
 
+.links_list{
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.links_item a{
+  text-decoration: none;
+}
 
 /*miu's workspace*/
 .speechimg{
@@ -102,7 +116,9 @@ h3{
 }
 .huspeech:not(:root){
   margin: 0 auto;
-  
+
+  background-color:red;
+
 }
 
 .birthcon{
@@ -216,33 +232,42 @@ h2{
 img{
   width: 100%;
 }
-h2{
+.main_birthday>section>h2{
   text-align: center;
+  color: coral;
+  background-image: url(/img/watermark.jpg);
+  height: 100px;
+  padding-top: 50px;
+  font-size: 40px;
 }
-h3{
-  text-align: center;
-}
+
+
 /* a */
 
 .main_birthday{
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 .main_birthday>section{
   width: 100%;
   margin-top: 200px;
 }
 
+#calinc-mem166555-height1000{
+  width: 100% !important;
+}
 .calendar{
- 
-  /* position: relative; */
-  padding-top: -1000px;
-  z-index: 2;
+  width: 100%;
+}
+.main_top_calendar{
+  justify-content: center;
 }
 .calendar_box{
-  text-align: center;
-  background: url(/img/watermark.jpg);
+  margin-left: 5%;
+  margin-right: 5%;
+  /* background: url(/img/watermark.jpg); */
 }
+
 .set{
   display: block;
   border: 1px solid;
@@ -256,18 +281,21 @@ h3{
   margin: 0 auto;
 }
 .icon_box{
-  margin-top: 130px;
+  margin-top: 100px;
 }
 .boxes{
   display: flex;
   width: 100%;
 }
-.boxes>li{
+.boxes>a>li{
   height: 100px;
 }
-.boxes>li>img{
+.boxes>li{
+  
+}
+.boxes>li>a>img{
   border-radius: 50%;
-  height: 200%;
+  height: 200px;
 }
 /* .card_message{
   display: flex;
@@ -285,5 +313,25 @@ h3{
   margin: 0 20%;
 }
 .indivisual>div{
-  margin-top: 50px;
+  margin-top: 200px;
+  padding-top: 100px;
+}
+.indivisual>div>p{
+  font-size: 24px;
+}
+#main_bottom{
+  width: 100px;
+  height: 100px;
+  z-index: 2000000;
+  right: 100px;
+  bottom: 100px;
+  position: fixed;
+  opacity: 0;
+}
+.main_bottom_circle{
+  height: 100%;
+  border-radius: 45%;
+  background-color: blanchedalmond;
+  text-align: center;
+  align-items: center;
 }
