@@ -133,6 +133,9 @@ h1{
 }
 main{
   margin-top: 70px;
+  padding-left: 15%;
+  padding-right: 15%;
+ 
 }
 h2{
   text-align: center;
@@ -211,7 +214,7 @@ input[type=checkbox]:checked + .la:before{
   align-items: center;
   margin: 0 auto;
   padding: 1em 2em;
-  width: 300px;
+  width: auto;
   color: gray;
   font-size: 18px;
   font-weight: 700;
@@ -301,7 +304,32 @@ input[type=checkbox]:checked + .la:before{
 
 
 /*fumiya's workspace*/
+
  /* fumiya no common */
+ .button05{
+  width: 25%;
+  
+ }
+ .button05::before{
+  content: '';
+  display: block;
+  padding-top: 25%;
+ }
+ .main-inner.d-grid.gap-3{
+  width: 100%;
+ }
+ 
+ .todays_harbors.p-2.bg-light.border{
+  justify-content: center;
+ }
+ .harlist{
+  display: flex;
+  width: 100% ;
+  justify-content: center;
+  
+  
+  
+ }
 img{
   width: 100%;
 }
@@ -429,6 +457,12 @@ img{
   /* mi */
 
   /* f */
+  /* トップ */
+  .harlist{
+    display: block;
+    margin: 0 auto;
+  }
+  /* バースデー */
   @function vw($width, $px) {
     @return $px / $width * 100vw;
   }
