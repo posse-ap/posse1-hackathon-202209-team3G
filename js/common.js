@@ -117,9 +117,28 @@
     // })
     
   }
-  
-  
+
   // miu
+
+// <div class="set">
+//   <div id="profile">
+//     <div id="pro_img"></div>
+//     <div id="pro_name"></div>
+//     <div id="pro_date"></div>
+//   </div>
+//   <div id="card_message">
+//     <div ></div>
+//     <div></div>
+//   </div>
+// </div>
+
+window.addEventListener("scroll", () => {
+  const bottomBtn = document.getElementById("main_bottom");
+  let scroll = window.scrollY;
+  if (scroll > 200) {
+    bottomBtn.style.position = fixed;
+  } else {bottomBtn.style.display = none;}
+});
 
   // fumiya
   
