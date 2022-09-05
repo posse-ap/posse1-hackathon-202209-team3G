@@ -133,6 +133,9 @@ h1{
 }
 main{
   margin-top: 70px;
+  padding-left: 15%;
+  padding-right: 15%;
+ 
 }
 h2{
   text-align: center;
@@ -211,7 +214,7 @@ input[type=checkbox]:checked + .la:before{
   align-items: center;
   margin: 0 auto;
   padding: 1em 2em;
-  width: 300px;
+  width: auto;
   color: gray;
   font-size: 18px;
   font-weight: 700;
@@ -301,7 +304,32 @@ input[type=checkbox]:checked + .la:before{
 
 
 /*fumiya's workspace*/
+
  /* fumiya no common */
+ .button05{
+  width: 25%;
+  
+ }
+ .button05::before{
+  content: '';
+  display: block;
+  padding-top: 25%;
+ }
+ .main-inner.d-grid.gap-3{
+  width: 100%;
+ }
+ 
+ .todays_harbors.p-2.bg-light.border{
+  justify-content: center;
+ }
+ .harlist{
+  display: flex;
+  width: 100% ;
+  justify-content: center;
+  
+  
+  
+ }
 img{
   width: 100%;
 }
@@ -359,17 +387,31 @@ img{
 .boxes{
   display: flex;
   width: 100%;
-}
-.boxes>a>li{
-  height: 100px;
-}
-.boxes>li{
   
 }
-.boxes>li>a>img{
-  border-radius: 50%;
-  height: 200px;
+.boxes>li{
+  margin-left: 2%;
+  width: 15%;
+  align-items: center;
+  }
+.boxes>li::before{
+  content: '';
+  display: block;
+  padding-top: 15%;
 }
+
+.boxes>li>a>img{
+  width: 100%;
+ 
+  border-radius: 45%;
+}
+.boxes>li>p{
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+
+
 /* .card_message{
   display: flex;
   justify-content: center;
@@ -399,9 +441,9 @@ img{
   right: 100px;
   bottom: 100px;
   position: fixed;
-  opacity: 0;
+  
 }
-.main_bottom_circle{
+#bottomBtn{
   height: 100%;
   border-radius: 45%;
   background-color: blanchedalmond;
@@ -415,9 +457,42 @@ img{
   /* mi */
 
   /* f */
+  /* トップ */
+  .harlist{
+    display: block;
+    margin: 0 auto;
+  }
+  /* バースデー */
+  @function vw($width, $px) {
+    @return $px / $width * 100vw;
+  }
+  
+  /* きつい */
+  .topvisual_ship :nth-child(even){
+    flex-direction: row-reverse ;
+  }
+  .topvisual_container{
+    display: block;
+  }
+  .topvisual_img{
+    margin: 0 auto;
+  }
+  /* きつい */
 
-}
+  .indivisual>div>p{
+  
+ 
+  /* max-width: 700px; */
+  height: 130px;
+  font-size: 14px;
+  overflow: scroll;
+  }
 
+  html{
+    width: 100%;
+  }
+
+  
 
 @media (max-width:480px){
   /* saki */
