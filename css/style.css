@@ -185,8 +185,12 @@ h2{
   background: url(/img/bir.PNG) no-repeat center center;
     background-size: cover;
     padding-bottom: 50px;
+    
+    
+    
 
-}
+
+  }
 
 /*チェックボックス*/
 input{
@@ -445,7 +449,31 @@ img{
   margin-bottom: 0;
   margin-top: 0;
 }
+.birthcon>ul{
+  margin-left: 5%;
+}
+.birthcon>ul>li>img{
+  border-radius: 45%;
+  
+}
+.birthcon>ul>li{
+  width: 12%;
+}
+.birthcon>ul>li::before{
+  content: '';
+  display: block;
+  padding-top: 12%;
+}
+.birthcon>ul>li>p{
+  color: darksalmon;
+  font-size: 30px;
+}
 
+
+
+.birthcon>ul{
+  display: flex;
+}
 
 
 
@@ -573,6 +601,16 @@ img{
   
   /* f */
   /* トップ */
+  
+  
+  .birthcon>ul>li{
+    width: 8%;
+  }
+  .birthcon>ul>li::before{
+    content: '';
+    display: block;
+    padding-top: 8%;
+  }
   
   .button05{
     /* width: 70%; */
