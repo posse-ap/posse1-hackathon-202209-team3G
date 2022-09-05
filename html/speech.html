@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/style.css">
-
+  
   <title>100秒スピーチ</title>
 </head>
 <body>
@@ -37,6 +37,7 @@
       <div class="topvisual_ship">
         <div class="topvisual_title">
           <h1>自ら機会を作り出し、<br>機会によって自らを変えよ</h1>
+          <p><a href="#yudai">yudai</a></p>
         </div>
         <div class="topvisual_container">
           <div class="topvisual_img">
@@ -94,7 +95,7 @@
         </div>
         <div class="topvisual_container">
           <div class="topvisual_content">
-            <h3 class="topvisual_name">猪瀬雄大</h3>
+            <h3 class="topvisual_name" id="yudai">猪瀬雄大</h3>
             <p class="topvisual_speech">
               本音の対話なくして最高のチームなし<br>
               最高のチームを作る上で隠してしまいがちな本音ってなんだろう？<br>
@@ -124,13 +125,19 @@
           <div class="topvisual_img">
             <img src="../img/inoseyudai.png" alt="猪瀬雄大">
           </div>
+          <div class="likes"></div>
         </div>
       </div>
     </section>
-
-    <div id="likes">
-      <p id="counter">0</p>
-      <button type="button" value="save" id="heart">+1</button>
+    
+    <div class="likes">
+      <div class="likes_counter">
+        <p id="counter">0</p>
+        <p>　likes</p>
+      </div>
+      <div class="likes_button" value="save" id="heart">
+        <img src="../img/heart.png" alt="heart" class="heart_btn">
+      </div>
     </div>
   </main>
   
