@@ -133,8 +133,8 @@ h1{
 }
 main{
   margin-top: 70px;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 10%;
+  padding-right: 10%;
  
 }
 h2{
@@ -309,6 +309,7 @@ input[type=checkbox]:checked + .clicked:before{
  /* fumiya no common */
  .button05{
   width: 25%;
+  margin-left: 5px;
   
  }
  .button05::before{
@@ -461,7 +462,15 @@ img{
   /* トップ */
   .harlist{
     display: block;
-    margin: 0 auto;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .button05{
+    width: 70%;
+    margin-bottom: 10px
+  }
+  .button05::before{
+    display: none;
   }
   /* バースデー */
   @function vw($width, $px) {
@@ -489,10 +498,12 @@ img{
   overflow: scroll;
   }
 
-  html{
-    width: 100%;
+  .main_birthday{
+    margin-left: 0;
+    margin-right: 0;
   }
-
+  
+  
   
 
 @media (max-width:480px){
@@ -501,5 +512,4 @@ img{
   /* mi */
   
   /* f */
-
-}
+ 
