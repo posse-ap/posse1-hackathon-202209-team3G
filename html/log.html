@@ -4,14 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/style.css">
   
-  <title>入力フォーム</title>
+  <title >入力フォーム</title>
 </head>
 <body>
   <div class="form">
-    <h1>入力フォーム</h1>
+    <h1 class="nyuuryoku">入力フォーム</h1>
     <form name="form" action="#" method="post">
-      <p>タイトル：<br>
+      <p class="titi">タイトル：<br>
         <select id="titles">
           <option value="">以下から選択してください</option>
           <option value="仲間の居場所つくらずして自分の居場所なし">仲間の居場所つくらずして自分の居場所なし</option>
@@ -25,14 +27,14 @@
           <option value="本音の対話なくして最高のチームなし">本音の対話なくして最高のチームなし</option>
           <option value="自ら機会を作り出し、機会によって自らを変えよ">自ら機会を作り出し、機会によって自らを変えよ</option>
         </select></p>
-        <p>名前：<br>
+        <p class="nana">名前：<br>
           <select id="names">
             <option value="">以下から選択してください</option>
             <option value="下鳥文也" class="input-name">下鳥文也</option>
             <option value="大西美海" class="input-name">大西美海</option>
             <option value="三木咲乃" class="input-name">三木咲乃</option>
           </select></p>
-          <p>内容：<br>
+          <p class="nainai">内容：<br>
             <textarea name="comment" cols="30" rows="5" id="input-message"></textarea></p>
             <input type="button" onclick="showMessage()" value="保存">
           </form>

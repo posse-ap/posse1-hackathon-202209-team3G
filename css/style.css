@@ -106,12 +106,36 @@ p{
 }
 
   /*フォームページ*/
-  .form h1{
-    text-align: center;
+.titi{
+   width: 90%;
+   margin: 0 auto;
+   max-width: 500px;
+   margin-top: 50px;
   }
+.nana{
+  width: 90%;
+  margin: 0 auto;
+  max-width: 500px;
+  margin-top: 20px;
+  }
+.nainai{
+  width: 90%;
+   margin: 0 auto;
+   max-width: 500px;
+   margin-top: 20px;
+}  
+.nyuuryoku{
+    
+  color: rgba(255, 165, 52, 1);
+
+}
 
 
 /*miu's workspace*/
+.nyuuryoku{
+  color: rgba(255, 165, 52, 1);
+
+}
 .speechimg{
   display: flex;
   gap: 50px;
@@ -174,7 +198,8 @@ h2{
 }
 .birbir{
   margin-top: 40px;
-  margin-bottom: 40px;olor: rgba(255, 165, 52, 1);
+  margin-bottom: 40px;
+  color: rgba(255, 165, 52, 1);
 }
 .birthimg{
   border-radius: 50%;
