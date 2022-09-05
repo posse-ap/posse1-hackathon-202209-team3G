@@ -28,7 +28,7 @@
   // checkButton.addEventListener('click', buttonClick);
   
   // }
-
+{
   const showMessage = () => {
     const title = document.getElementById("titles").value;
     document.getElementById("output-title").textContent = title;
@@ -43,4 +43,9 @@
     const outputMessage = inputValue;
     //出力用のp要素にメッセージを表示
     document.getElementById("output-message").innerHTML = outputMessage;
+
+    localStorage.setItem('save', title, name, outputMessage);
   }
+  const value4 = localStorage.getItem('save4');
+  counter4.innerHTML = value4;
+}
