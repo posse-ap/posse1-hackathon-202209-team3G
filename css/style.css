@@ -189,24 +189,29 @@ h3{
 /* a */
 
 .main_birthday{
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 .main_birthday>section{
   width: 100%;
   margin-top: 200px;
 }
 
+#calinc-mem166555-height1000{
+  width: 100% !important;
+}
 .calendar{
- 
-  /* position: relative; */
-  padding-top: -1000px;
-  z-index: 2;
+  width: 100%;
+}
+.main_top_calendar{
+  justify-content: center;
 }
 .calendar_box{
-  text-align: center;
-  background: url(/img/watermark.jpg);
+  margin-left: 5%;
+  margin-right: 5%;
+  /* background: url(/img/watermark.jpg); */
 }
+
 .set{
   display: block;
   border: 1px solid;
@@ -220,7 +225,7 @@ h3{
   margin: 0 auto;
 }
 .icon_box{
-  margin-top: 130px;
+  margin-top: 100px;
 }
 .boxes{
   display: flex;
@@ -251,6 +256,20 @@ h3{
 .indivisual{
   margin: 0 20%;
 }
-.indivisual>a>div{
-  margin-top: 50px;
+.indivisual>div{
+  margin-top: 200px;
+}
+.main_bottom{
+  width: 100px;
+  height: 100px;
+  z-index: 200;
+  margin-right: 10px;
+  margin-bottom: 200px;
+}
+.main_bottom_circle{
+  height: 100%;
+  border-radius: 45%;
+  background-color: blanchedalmond;
+  text-align: center;
+  align-items: center;
 }
