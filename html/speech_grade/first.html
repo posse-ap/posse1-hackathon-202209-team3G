@@ -9,32 +9,37 @@
 </head>
 <body>
   <h1>入力フォーム</h1>
-<form action="#" method="post">
+<form name="form" action="#" method="post">
 	<p>タイトル：<br>
-    <select name="example">
+    <select id="titles">
       <option value="sample_1">以下から選択してください</option>
-      <option value="sample_1" data-title="1">仲間の居場所つくらずして自分の居場所なし</option>
-      <option value="sample_1" data-title="2">振り返り主義</option>
-      <option value="sample_1" data-title="3">インサイドアウト</option>
-      <option value="sample_1" data-title="4">理解してから理解される</option>
-      <option value="sample_1" data-title="5">深掘力は人格力</option>
-      <option value="sample_1" data-title="6">嘘をつかないごまかさない</option>
-      <option value="sample_1" data-title="7">教えることは教わること</option>
-      <option value="sample_1" data-title="8">「ベンチ行かない？」と言う勇気</option>
-      <option value="sample_1" data-title="9">本音の対話なくして最高のチームなし</option>
-      <option value="sample_1" data-title="10">自ら機会を作り出し、機会によって自らを変えよ</option>
+      <option value="仲間の居場所つくらずして自分の居場所なし">仲間の居場所つくらずして自分の居場所なし</option>
+      <option value="振り返り主義">振り返り主義</option>
+      <option value="インサイドアウト">インサイドアウト</option>
+      <option value="理解してから理解される">理解してから理解される</option>
+      <option value="深掘力は人格力">深掘力は人格力</option>
+      <option value="嘘をつかないごまかさない">嘘をつかないごまかさない</option>
+      <option value="教えることは教わること">教えることは教わること</option>
+      <option value="「ベンチ行かない？」と言う勇気">「ベンチ行かない？」と言う勇気</option>
+      <option value="本音の対話なくして最高のチームなし">本音の対話なくして最高のチームなし</option>
+      <option value="自ら機会を作り出し、機会によって自らを変えよ">自ら機会を作り出し、機会によって自らを変えよ</option>
     </select></p>
 	<p>名前：<br>
-    <select name="example">
+    <select id="names">
       <option value="sample_1">以下から選択してください</option>
-      <option value="sample_1" data-name="1">下鳥文也</option>
-      <option value="sample_1" data-name="2">大西美海</option>
-      <option value="sample_1" data-name="3">三木咲乃</option>
+      <option value="下鳥文也" class="input-name">下鳥文也</option>
+      <option value="大西美海" class="input-name">大西美海</option>
+      <option value="三木咲乃" class="input-name">三木咲乃</option>
     </select></p>
 	<p>内容：<br>
-	<textarea name="comment" cols="30" rows="5" value=""></textarea></p>
-  <p><input type="submit" value="保存"></p>
+	<textarea name="comment" cols="30" rows="5" id="input-message"></textarea></p>
+  <input type="button" onclick="showMessage()" value="保存">
 </form>
+<div>
+<p id="output-title"></p>
+<p id="output-name"></p>
+<p id="output-message"></p>
+</div>
 </body>
-<script src="../js/common.js"></script>
+<script src="../../js/form.js"></script>
 </html>
