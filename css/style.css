@@ -124,7 +124,7 @@ p{
 h3{
   text-align: center;
   font-size: x-large;
-  margin-top: 100px;
+  margin-top: 40px;
 }
 .cp_container{
   max-width: 700px;
@@ -148,6 +148,7 @@ h1{
 
 .birthcon{
   display: flex;
+  margin-top: 100px;
 }
 main{
   margin-top: 70px;
@@ -158,23 +159,33 @@ padding-right: 10%;
 }
 h2{
   text-align: center;
+  
  
-  margin-top: 30px;
-  margin-bottom: 30px;
+  
 }
 .harhar{
   color: white;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 .hunhun{
   color: rgba(255, 165, 52, 1);
+  margin-top: 40px;
 }
 .birbir{
-  color: rgba(255, 165, 52, 1);
+  margin-top: 40px;
+  margin-bottom: 40px;olor: rgba(255, 165, 52, 1);
 }
 .birthimg{
   border-radius: 50%;
   height: 200px;
   width: 100%;
+}
+.birthday{
+  background: url(/img/bir.PNG) no-repeat center center;
+    background-size: cover;
+    padding-bottom: 50px;
+
 }
 
 /*チェックボックス*/
