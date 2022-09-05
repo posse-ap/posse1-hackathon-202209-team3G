@@ -404,13 +404,13 @@ img{
 }
 .boxes>li{
   margin-left: 2%;
-  width: 15%;
+  width: 12%;
   align-items: center;
 }
 .boxes>li::before{
   content: '';
   display: block;
-  padding-top: 15%;
+  padding-top: 12%;
 }
 
 .boxes>li>a>img{
@@ -425,18 +425,7 @@ img{
 
 
 
-/* .card_message{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-.card{
-  margin-right: 5%;
-}
-.message{
-  align-items: center;
-  padding: 50px 0;
-} */
+
 .indivisual{
   margin: 0 20%;
 }
@@ -554,20 +543,20 @@ img{
   /* f */
   /* トップ */
   .harlist{
-    display: block;
-    margin-left: 10%;
-    margin-right: 10%;
+    /* display: block; */
+    /* margin-left: 10%; */
+    /* margin-right: 10%; */
   }
   .button05{
-    width: 70%;
+    /* width: 70%; */
     margin-bottom: 10px
   }
   .button05::before{
-    display: none;
+    /* display: none; */
   }
   /* バースデー */
-  @function vw($width, $px) {
-    @return $px / $width * 100vw;
+  .icon_box{
+    margin-top: 100px;
   }
   
   /* きつい */
@@ -601,9 +590,13 @@ img{
     margin-left: 0;
     margin-right: 0;
   }
+  h2{
+    font
+  }
 
 
-@media (max-width:480px){
+@media (max-width:480px)
+{
   /* saki */
 
   .topvisual_title h1{
@@ -620,6 +613,17 @@ img{
   
   /* f */
 
+  main{
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .icon_box{
+    margin-top: 60px;
+  }
+ } 
+
+
   
 }
+
 
