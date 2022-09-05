@@ -45,3 +45,4 @@ speeches.push(information);
 
 info.innerHTML = speeches;
   // localStorage.clear();
+  
