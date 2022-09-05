@@ -207,8 +207,12 @@ h2{
   background: url(/img/bir.PNG) no-repeat center center;
     background-size: cover;
     padding-bottom: 50px;
+    
+    
+    
 
-}
+
+  }
 
 /*チェックボックス*/
 input{
@@ -374,9 +378,22 @@ input[type=checkbox]:checked + .clicked:before{
 
 /*fumiya's workspace*/
 
+
  /* fumiya no common */
  
+.speech_pic{
+  width: 12%;
+  align-items: center;
+}
+.speech_pic::before{
+  content: '';
+  display: block;
+  padding-bottom: 12%;
   
+}
+.speech_pic>img{
+  width: 100%;
+}
 
  
  .main-inner.d-grid.gap-3{
@@ -405,6 +422,7 @@ img{
 .main_birthday{
   margin-left: 15%;
   margin-right: 15%;
+  background: url(/img/1700_free.jpg) repeat;
 }
 .main_birthday>section{
   width: 100%;
@@ -419,7 +437,7 @@ img{
 }
 .main_top_calendar{
   justify-content: center;
-  height: 1200px;
+  height: 900px;
 }
 .calendar_box{
   margin-left: 5%;
@@ -457,22 +475,54 @@ img{
   display: block;
   padding-top: 12%;
 }
+.boxes>li>img{
+  
+  
+  border-radius: 45%;
+  border: solid 5px coral !important;
+}
 
 .boxes>li>a>img{
   width: 100%;
   
   border-radius: 45%;
+  border: solid 5px coral !important;
 }
 .boxes>li>p{
   margin-bottom: 0;
   margin-top: 0;
 }
+.birthcon>ul{
+  margin-left: 5%;
+}
+.birthcon>ul>li>img{
+  width: 100%;
+  border-radius: 45%;
+  border: solid 5px coral;
+}
+.birthcon>ul>li{
+  width: 12%;
+}
+.birthcon>ul>li::before{
+  content: '';
+  display: block;
+  padding-top: 12%;
+}
+.birthcon>ul>li>p{
+  color: darksalmon;
+  font-size: 30px;
+}
 
+
+
+.birthcon>ul{
+  display: flex;
+}
 
 
 
 .indivisual{
-  margin: 0 20%;
+  margin: 0 10%;
 }
 .indivisual>div{
   margin-top: 200px;
@@ -595,11 +645,28 @@ img{
   
   /* f */
   /* トップ */
+  .speechimg{
+    gap: 10px;
+  }
+  
+  .birthcon>ul>li{
+    width: 8%;
+  }
+  .birthcon>ul>li::before{
+    content: '';
+    display: block;
+    padding-top: 8%;
+  }
   
   .button05{
     /* width: 70%; */
     margin-bottom: 10px
   }
+
+  .topvisual_ship :nth-child(even){
+    flex-direction: column-reverse;
+  }
+  
   
   /* バースデー */
   .icon_box{
@@ -618,14 +685,14 @@ img{
   
   html{
     width: 100%;
+    background-image: url(/img/1700_free.jpg) repeat;
+
   }
   .main_birthday{
     margin-left: 0;
     margin-right: 0;
   }
-  h2{
-    font-size: 20px;
-  }
+ 
   section{
     margin-bottom: 0;
   }
