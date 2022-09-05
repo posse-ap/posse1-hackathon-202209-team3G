@@ -63,10 +63,6 @@
   // localStorage.clear();
 }
 
-/*入力フォームの内容を保存*/
-
-
-
 {
 //   const numbers = [1,2,3,4];
 
