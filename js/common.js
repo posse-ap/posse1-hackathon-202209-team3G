@@ -79,7 +79,7 @@
 // console.log(numbers);
 // }
 
-{
+// {
   // const likes = document.querySelectorAll('.likes');
   // likes.forEach(like => {
   //   like.innerHTML = `<div class="likes_counter">
