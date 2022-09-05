@@ -63,10 +63,6 @@
   // localStorage.clear();
 }
 
-/*入力フォームの内容を保存*/
-
-
-
 {
 //   const numbers = [1,2,3,4];
 
@@ -183,9 +179,9 @@ const all_profile = [
 
 window.addEventListener("scroll", () => {
   const bottomBtn = document.getElementById("main_bottom");
-  const scroll = window.pageYOffset;
-  if (scroll > 2000) {
-    bottomBtn.style.opacity = 0.5;
-  } else {btn.style.opacity = 0;}
+  let scroll = window.scrollY;
+  if (scroll > 200) {
+    bottomBtn.style.position = fixed;
+  } else {bottomBtn.style.display = none;}
 });
 
