@@ -383,7 +383,19 @@ input[type=checkbox]:checked + .clicked:before{
 
  /* fumiya no common */
  
+.speech_pic{
+  width: 12%;
+  align-items: center;
+}
+.speech_pic::before{
+  content: '';
+  display: block;
+  padding-bottom: 12%;
   
+}
+.speech_pic>img{
+  width: 100%;
+}
 
  
  .main-inner.d-grid.gap-3{
@@ -626,7 +638,9 @@ img{
   
   /* f */
   /* トップ */
-  
+  .speechimg{
+    gap: 10px;
+  }
   
   .birthcon>ul>li{
     width: 8%;
