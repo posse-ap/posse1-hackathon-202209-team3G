@@ -137,15 +137,23 @@ h1{
 }
 main{
   margin-top: 70px;
-  padding-left: 15%;
-  padding-right: 15%;
+ 
  
 }
 h2{
   text-align: center;
-  color: rgba(255, 165, 52, 1);
+ 
   margin-top: 30px;
   margin-bottom: 30px;
+}
+.harhar{
+  color: white;
+}
+.hunhun{
+  color: rgba(255, 165, 52, 1);
+}
+.birbir{
+  color: rgba(255, 165, 52, 1);
 }
 .birthimg{
   border-radius: 50%;
@@ -191,7 +199,7 @@ span{
   border-radius:100px;
   position:relative;
   cursor:pointer;
-  transition:.3s ease;
+  transition:.3s ease
 }
 input[type=checkbox]:checked + .la{
   background: rgba(255, 165, 52, 1);
@@ -220,7 +228,7 @@ input[type=checkbox]:checked + .la:before{
   align-items: center;
   margin: 0 auto;
   padding: 1em 2em;
-  width: auto;
+  max-width: 300px;
   color: gray;
   font-size: 18px;
   font-weight: 700;
@@ -307,20 +315,20 @@ input[type=checkbox]:checked + .la:before{
 	padding-bottom: 80px; 
 	transition: all 0.5s;
 }
+.todays_harbors{
+  background: url(/img/harbors:a.jpeg) no-repeat center center;
+    background-size: cover;
+    padding-bottom: 50px;
+}
 
 
 /*fumiya's workspace*/
 
  /* fumiya no common */
- .button05{
-  width: 25%;
+ 
   
- }
- .button05::before{
-  content: '';
-  display: block;
-  padding-top: 25%;
- }
+
+ 
  .main-inner.d-grid.gap-3{
   width: 100%;
  }
@@ -328,14 +336,7 @@ input[type=checkbox]:checked + .la:before{
  .todays_harbors.p-2.bg-light.border{
   justify-content: center;
  }
- .harlist{
-  display: flex;
-  width: 100% ;
-  justify-content: center;
-  
-  
-  
- }
+
 img{
   width: 100%;
 }
@@ -465,8 +466,8 @@ img{
   /* f */
   /* トップ */
   .harlist{
-    display: block;
-    margin: 0 auto;
+    
+   
   }
   /* バースデー */
   @function vw($width, $px) {
