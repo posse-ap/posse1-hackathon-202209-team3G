@@ -386,6 +386,7 @@ img{
 }
 .main_top_calendar{
   justify-content: center;
+  height: 1200px;
 }
 .calendar_box{
   margin-left: 5%;
@@ -446,6 +447,8 @@ img{
 }
 .indivisual>div>p{
   font-size: 24px;
+  height: 200px;
+  overflow: scroll;
 }
 #main_bottom{
   width: 100px;
@@ -474,6 +477,12 @@ img{
   .topvisual_title h1{
     font-size: 28px;
   }
+
+  .main_top_calendar{
+    
+    height: 600px;
+  }
+
   
     /*ハンバーガーメニュー*/
     .header_nav{
@@ -547,46 +556,28 @@ img{
     #menu-btn-check:checked ~ .menu-content ul li a{
       display: block;
     }
-  
+
   
   /* mi */
   
   /* f */
   /* トップ */
-  .harlist{  
-    /* display: block; */
-    /* margin-left: 10%; */
-    /* margin-right: 10%; */
-  }
+  
   .button05{
     /* width: 70%; */
     margin-bottom: 10px
   }
-  .button05::before{
-    /* display: none; */
-  }
+  
   /* バースデー */
   .icon_box{
     margin-top: 100px;
   }
   
-  /* きつい */
-  .topvisual_container:nth-child(even){
-    flex-direction: column-reverse;
-    display: flex;
-  }
-  .topvisual_container:nth-child(odd){
-    display: block;
-  }
-  .topvisual_img{
-    margin: 0 auto;
-  }
-  /* きつい */
   
+  .indivisual>div{
+    margin-top: 100px;
+  }
   .indivisual>div>p{
-    
-    
-    /* max-width: 700px; */
     height: 130px;
     font-size: 14px;
     overflow: scroll;
@@ -602,7 +593,10 @@ img{
     margin-right: 0;
   }
   h2{
-    font
+    font-size: 10px;
+  }
+  section{
+    margin-bottom: 0;
   }
 
 
@@ -623,7 +617,10 @@ img{
   /* mi */
   
   /* f */
-
+  
+  .indivisual>div{
+    margin-top: 50px;
+  }
   main{
     padding-left: 3%;
     padding-right: 3%;
@@ -631,10 +628,12 @@ img{
   .icon_box{
     margin-top: 60px;
   }
+  .main_top_calendar{
+    
+    height: 600px;
+  }
+  
  } 
 
-
-  
-}
 
 
