@@ -27,7 +27,8 @@ img{
 }
 
 .header_nav{
-  margin-left: auto;
+  position: absolute;
+  right: 0px;
 }
 
 .header_nav_list{
