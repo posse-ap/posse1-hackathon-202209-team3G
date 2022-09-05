@@ -375,6 +375,7 @@ img{
 }
 .main_top_calendar{
   justify-content: center;
+  height: 800px;
 }
 .calendar_box{
   margin-left: 5%;
@@ -435,6 +436,8 @@ img{
 }
 .indivisual>div>p{
   font-size: 24px;
+  height: 200px;
+  overflow: scroll;
 }
 #main_bottom{
   width: 100px;
@@ -458,7 +461,10 @@ img{
   .topvisual_title h1{
     font-size: 28px;
   }
-  
+  .main_top_calendar{
+    
+    height: 600px;
+  }
   
   /* mi */
   
@@ -493,7 +499,9 @@ img{
     margin: 0 auto;
   }
   /* きつい */
-  
+  .indivisual>div{
+    margin-top: 100px;
+  }
   .indivisual>div>p{
     
     
@@ -513,7 +521,10 @@ img{
     margin-right: 0;
   }
   h2{
-    font
+    font-size: 10px;
+  }
+  section{
+    margin-bottom: 0;
   }
 
 
@@ -609,7 +620,10 @@ img{
   /* mi */
   
   /* f */
-
+  
+  .indivisual>div{
+    margin-top: 50px;
+  }
   main{
     padding-left: 3%;
     padding-right: 3%;
@@ -617,6 +631,11 @@ img{
   .icon_box{
     margin-top: 60px;
   }
+  .main_top_calendar{
+    
+    height: 600px;
+  }
+  
  } 
 
 
