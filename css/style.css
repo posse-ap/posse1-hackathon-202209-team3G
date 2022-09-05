@@ -123,6 +123,8 @@ p{
 }
 h3{
   text-align: center;
+  font-size: x-large;
+  margin-top: 100px;
 }
 .cp_container{
   max-width: 700px;
@@ -137,6 +139,8 @@ h3{
 h1{
   margin-top: 50px;
   text-align: center;
+  color: rgba(255, 165, 52, 1);
+  margin-bottom: 50px;
 }
 .wrap{
   margin-top: 150px;
@@ -147,15 +151,22 @@ h1{
 }
 main{
   margin-top: 70px;
-
-  padding-left: 15%;
-  padding-right: 15%;
-
   padding-left: 10%;
   padding-right: 10%;
 }
 h2{
   text-align: center;
+ 
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.harhar{
+  color: white;
+}
+.hunhun{
+  color: rgba(255, 165, 52, 1);
+}
+.birbir{
   color: rgba(255, 165, 52, 1);
 }
 .birthimg{
@@ -202,7 +213,7 @@ span{
   border-radius:100px;
   position:relative;
   cursor:pointer;
-  transition:.3s ease;
+  transition:.3s ease
 }
 .clicked{
   background: rgba(255, 165, 52, 1);
@@ -232,7 +243,7 @@ input[type=checkbox]:checked + .clicked:before{
   align-items: center;
   margin: 0 auto;
   padding: 1em 2em;
-  width: auto;
+  max-width: 300px;
   color: gray;
   font-size: 18px;
   font-weight: 700;
@@ -319,42 +330,34 @@ input[type=checkbox]:checked + .clicked:before{
   padding-bottom: 80px; 
   transition: all 0.5s;
 }
+.todays_harbors{
+  background: url(/img/harbors:a.jpeg) no-repeat center center;
+    background-size: cover;
+    padding-bottom: 50px;
+}
 
 
 /*fumiya's workspace*/
 
-/* fumiya no common */
-.button05{
-  width: 25%;
-  margin-left: 5px;
+ /* fumiya no common */
+ 
   
-}
-.button05::before{
-  content: '';
-  display: block;
-  padding-top: 25%;
-}
-.main-inner.d-grid.gap-3{
+
+ 
+ .main-inner.d-grid.gap-3{
   width: 100%;
 }
 
 .todays_harbors.p-2.bg-light.border{
   justify-content: center;
-}
-.harlist{
-  display: flex;
-  width: 100% ;
-  justify-content: center;
-  
-  
-  
-}
+ }
+
 img{
   width: 100%;
 }
 .main_birthday>section>h2{
   text-align: center;
-  color: coral;
+  color: rgba(255, 165, 52, 1);
   background-image: url(/img/watermark.jpg);
   height: 100px;
   padding-top: 50px;
@@ -548,7 +551,7 @@ img{
   
   /* f */
   /* トップ */
-  .harlist{
+  .harlist{  
     /* display: block; */
     /* margin-left: 10%; */
     /* margin-right: 10%; */
