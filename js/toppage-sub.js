@@ -1,25 +1,39 @@
 'use strict';
 
-console.log('hello');
-
-// if(clicked === true){
-//   console.log('hello');
-// }
-
-// localStorage.setItem('btnClick', )
-
-{
-  const clicked = document.querySelectorAll('.la');
-  // localStorage.setItem('click', btnClick);
+  let input_checked = document.querySelector("input[type=checkbox]");
   
-  let num = 0;
-  const btnClick = clicked.forEach(click =>
-    click.addEventListener('click', () => {
-      click.classList.toggle('clicked');
-      num += 1;
-      console.log(num);
-    })
-    )
-  }
-  // localStorage.getItem('click');
-  
+  window.onload = () => {
+    
+    input_checked.addEventListener('change',function(){
+      console.log(this.checked);
+      localStorage.setItem('data', this.checked);
+    });
+    
+    console.log(data)
+    if(data === 'true'){
+      const save = input_checked.classList.add('input[type=checkbox]:checked');
+      localStorage.setItem('save', save);
+      console.log('hello world');
+    }
+    
+    const clicked = document.querySelectorAll('.la');
+    
+    const btnClick = clicked.forEach(click =>
+      click.addEventListener('click', () => {
+        click.classList.toggle('clicked');
+      })
+      )
+
+    }
+    
+    const data = localStorage.getItem('data');
+    const save = localStorage.getItem('save');  
+    
+    if(data === 'true'){
+      console.log('number')
+      const clicked = document.querySelectorAll('.la');
+      clicked.forEach(click => 
+        click.setAttribute('class', 'la clicked')
+        )
+        input_checked.setAttribute('checked', 'checked')
+      }
