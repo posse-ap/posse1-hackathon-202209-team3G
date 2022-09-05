@@ -97,7 +97,55 @@ p{
   text-decoration: none;
 }
 
+.menu-content ul li a{
+  display: none;
+}
+
+#menu-btn-check{
+  display: none;
+}
+
+  /*フォームページ*/
+.titi{
+   width: 90%;
+   margin: 0 auto;
+   max-width: 500px;
+   margin-top: 50px;
+  }
+.nana{
+  width: 90%;
+  margin: 0 auto;
+  max-width: 500px;
+  margin-top: 20px;
+  }
+.nainai{
+  width: 90%;
+   margin: 0 auto;
+   max-width: 500px;
+   margin-top: 20px;
+}  
+.nyuuryoku{
+    
+  color: rgba(255, 165, 52, 1);
+
+}
+
+
 /*miu's workspace*/
+.imgbirth{
+ 
+    width: 280px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: flex;
+    
+  }
+
+.nyuuryoku{
+  color: rgba(255, 165, 52, 1);
+
+}
 .speechimg{
   display: flex;
   gap: 50px;
@@ -110,17 +158,17 @@ p{
 h3{
   text-align: center;
   font-size: x-large;
-  margin-top: 100px;
+  margin-top: 40px;
 }
 .cp_container{
   max-width: 700px;
-
+  
 }
 .huspeech:not(:root){
   margin: 0 auto;
-
- 
-
+  
+  
+  
 }
 h1{
   margin-top: 50px;
@@ -134,21 +182,53 @@ h1{
 
 .birthcon{
   display: flex;
+  margin-top: 100px;
+  
 }
 main{
-  margin-top: 70px;
+  margin-top: 58px;
+}
+.main_birthday{
+padding-left: 10%;
+padding-right: 10%;
 }
 h2{
   text-align: center;
-  color: rgba(255, 165, 52, 1);
-  margin-top: 30px;
+}
+.harhar{
+  color: white;
+  margin-top: 50px;
   margin-bottom: 30px;
+  font-size: 35px;
+}
+.hunhun{
+  color: rgba(255, 165, 52, 1);
+  margin-top: 40px;
+  font-size: 35px;
+}
+.birbir{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: rgba(255, 165, 52, 1);
+  font-size: 35px;
+  padding-top: 40px;
 }
 .birthimg{
   border-radius: 50%;
   height: 200px;
   width: 100%;
+
 }
+.birthday{
+  background: url(/img/bir.PNG) no-repeat center center;
+    background-size: cover;
+    padding-bottom: 50px;
+    
+    
+    
+
+
+  }
 
 /*チェックボックス*/
 input{
@@ -188,14 +268,15 @@ span{
   border-radius:100px;
   position:relative;
   cursor:pointer;
-  transition:.3s ease;
+  transition:.3s ease
 }
-input[type=checkbox]:checked + .la{
+.clicked{
   background: rgba(255, 165, 52, 1);
 }
-input[type=checkbox]:checked + .la:before{
+input[type=checkbox]:checked + .clicked:before{
   left:50px;
 }
+
 .la:before{
   transition:.3s ease;
   content:'';
@@ -217,7 +298,7 @@ input[type=checkbox]:checked + .la:before{
   align-items: center;
   margin: 0 auto;
   padding: 1em 2em;
-  width: 300px;
+  max-width: 300px;
   color: gray;
   font-size: 18px;
   font-weight: 700;
@@ -246,68 +327,99 @@ input[type=checkbox]:checked + .la:before{
 /*ボタン*/
 
 .cp_box *, .cp_box *:before, .cp_box *:after {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .cp_box {
-	position: relative;
+  position: relative;
 }
 .cp_box label {
-	position: absolute;
-	z-index: 1;
-	bottom: 0;
-	width: 100%;
-	height: 100px; /* グラデーションの高さ */
-	cursor: pointer;
-	text-align: center;
-	background: linear-gradient(to bottom, rgba(250, 252, 252, 0) 0%, rgba(250, 252, 252, 0.95) 90%);
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+  height: 100px; /* グラデーションの高さ */
+  cursor: pointer;
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(250, 252, 252, 0) 0%, rgba(250, 252, 252, 0.95) 90%);
 }
 /* 開いた時にグラデーションを消す */
 .cp_box input:checked + label {
-	background: inherit; 
+  background: inherit; 
 }
 .cp_box label:after {
-	line-height: 2.5rem;
-	position: absolute;
-	z-index: 2;
-	bottom: 20px;
-	left: 50%;
-	width: 16rem;
-	font-family: FontAwesome;
-	content: '⬇︎'' 続きをよむ';
-	transform: translate(-50%, 0);
-	letter-spacing: 0.05em;
-	color: #ffffff;
-	border-radius: 20px;
-	background-color: rgba(27, 37, 56, 1);
+  line-height: 2.5rem;
+  position: absolute;
+  z-index: 2;
+  bottom: 20px;
+  left: 50%;
+  width: 16rem;
+  font-family: FontAwesome;
+  content: '⬇︎'' 続きをよむ';
+  transform: translate(-50%, 0);
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  border-radius: 20px;
+  background-color: rgba(27, 37, 56, 1);
 }
 .cp_box input {
-	display: none;
+  display: none;
 }
 /* 開く前に見えている部分の高さ */
 .cp_box .cp_container {
-	overflow: hidden;
-	height: 250px; 
-	transition: all 0.5s;
+  overflow: hidden;
+  height: 250px; 
+  transition: all 0.5s;
 }
 /* display: none ; 閉じるボタンを消す場合解放 */
 .cp_box input:checked + label {
-
+  
 }
 .cp_box input:checked + label:after {
-	font-family: FontAwesome;
-	content: '⬆︎'' 閉じる';
+  font-family: FontAwesome;
+  content: '⬆︎'' 閉じる';
 }
 /* 閉じるボタンのbottomからの位置 */
 .cp_box input:checked ~ .cp_container {
-	height: auto;
-	padding-bottom: 80px; 
-	transition: all 0.5s;
+  height: auto;
+  padding-bottom: 80px; 
+  transition: all 0.5s;
+}
+.todays_harbors{
+  background: url(/img/harbors:a.jpeg) no-repeat center center;
+    background-size: cover;
+    padding-bottom: 50px;
 }
 
 
 /*fumiya's workspace*/
+
+
  /* fumiya no common */
+ 
+.speech_pic{
+  width: 12%;
+  align-items: center;
+}
+.speech_pic::before{
+  content: '';
+  display: block;
+  padding-bottom: 12%;
+  
+}
+.speech_pic>img{
+  width: 100%;
+}
+
+ 
+ .main-inner.d-grid.gap-3{
+  width: 100%;
+}
+
+.todays_harbors.p-2.bg-light.border{
+  justify-content: center;
+ }
+
 img{
   width: 100%;
 }
@@ -326,6 +438,7 @@ img{
 .main_birthday{
   margin-left: 15%;
   margin-right: 15%;
+  background: url(/img/1700_free.jpg) repeat;
 }
 .main_birthday>section{
   width: 100%;
@@ -340,6 +453,7 @@ img{
 }
 .main_top_calendar{
   justify-content: center;
+  height: 900px;
 }
 .calendar_box{
   margin-left: 5%;
@@ -365,31 +479,66 @@ img{
 .boxes{
   display: flex;
   width: 100%;
-}
-.boxes>a>li{
-  height: 100px;
-}
-.boxes>li{
   
 }
-.boxes>li>a>img{
-  border-radius: 50%;
-  height: 200px;
-}
-/* .card_message{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-.card{
-  margin-right: 5%;
-}
-.message{
+.boxes>li{
+  margin-left: 2%;
+  width: 12%;
   align-items: center;
-  padding: 50px 0;
-} */
+}
+.boxes>li::before{
+  content: '';
+  display: block;
+  padding-top: 12%;
+}
+.boxes>li>img{
+  
+  
+  border-radius: 45%;
+  border: solid 5px coral !important;
+}
+
+.boxes>li>a>img{
+  width: 100%;
+  
+  border-radius: 45%;
+  border: solid 5px coral !important;
+}
+.boxes>li>p{
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.birthcon>ul{
+  margin-left: 5%;
+}
+.birthcon>ul>li>img{
+  width: 100%;
+  border-radius: 45%;
+  border: solid 5px coral;
+}
+.birthcon>ul>li{
+  width: 12%;
+}
+.birthcon>ul>li::before{
+  content: '';
+  display: block;
+  padding-top: 12%;
+}
+.birthcon>ul>li>p{
+  color: darksalmon;
+  font-size: 30px;
+}
+
+
+
+.birthcon>ul{
+  display: flex;
+}
+
+
+
 .indivisual{
-  margin: 0 20%;
+  margin: 0 10%;
 }
 .indivisual>div{
   margin-top: 200px;
@@ -397,17 +546,20 @@ img{
 }
 .indivisual>div>p{
   font-size: 24px;
+  height: 200px;
+  overflow: scroll;
 }
 #main_bottom{
   width: 100px;
   height: 100px;
-  z-index: 2000000;
-  right: 100px;
-  bottom: 100px;
+  z-index: 500;
+  right: 10px;
+  bottom: 10px;
   position: fixed;
-  opacity: 0;
+  
 }
-.main_bottom_circle{
+.bottomBtn{
+  display: flex;
   height: 100%;
   border-radius: 45%;
   background-color: blanchedalmond;
@@ -417,19 +569,191 @@ img{
 
 @media (max-width:720px) {
   /* saki */
+  .topvisual_container{
+    margin-bottom: 70px;
+  }
 
-  /* mi */
+  .topvisual_title h1{
+    font-size: 28px;
+  }
 
-  /* f */
+  .main_top_calendar{
+    
+    height: 600px;
+  }
 
-}
+  
+    /*ハンバーガーメニュー*/
+    .header_nav{
+      display: none;
+    }
+    
+    
+    .menu-btn{
+      position: fixed;
+      top: 0px;
+      right: 8px;
+      display: flex;
+      height: 53px;
+      width: 47px;
+      justify-content: center;
+      align-items: center;
+      z-index: 90;
+    }
+    .menu-btn span:before,
+    .menu-btn span:after {
+      content: '';
+      display: block;
+      height: 1px;
+      width: 25px;
+      background-color: black;
+      position: absolute;
+    }
+    .menu-btn span:before {
+      bottom: 20px;
+    }
+    .menu-btn span:after {
+      top: 20px;
+    }
+    #menu-btn-check:checked ~ .menu-btn span::before {
+      bottom: 50%;
+      transform: rotate(45deg);
+    }
+    #menu-btn-check:checked ~ .menu-btn span::after {
+      top: 48%;
+      transform: rotate(-45deg);
+    }
+    
+    /*ハンバーガーメニューのコンテントの実装*/
+    .menu-content{
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 100%;
+      background-color: white;
+      z-index: 80;
+      transition: all 0.5s;
+      text-align: center;
+      padding-top: 170px;
+    }
+    #menu-btn-check {
+      display: none;
+    }
+    #menu-btn-check:checked ~ .menu-content {
+      left: 0;/*メニューを画面内へ*/
+    }
+    .p-header_logo{
+      z-index: 100;
+    }
+    .menu-content ul li a{
+      font-family: "Noto Sans JP";
+      font-size: 24px;
+      line-height: 150%;
+      letter-spacing: 0.05em;
+    }
+    #menu-btn-check:checked ~ .menu-content ul li a{
+      display: block;
+    }
 
-
-@media (max-width:480px){
-  /* saki */
-
+  
   /* mi */
   
   /* f */
+  /* トップ */
+  .speechimg{
+    gap: 10px;
+  }
+  
+  .birthcon>ul>li{
+    width: 8%;
+  }
+  .birthcon>ul>li::before{
+    content: '';
+    display: block;
+    padding-top: 8%;
+  }
+  
+  .button05{
+    /* width: 70%; */
+    margin-bottom: 10px
+  }
 
+  .topvisual_ship :nth-child(even){
+    flex-direction: column-reverse;
+  }
+  
+  .topvisual_container:nth-child(odd){
+    flex-direction: column;
+  }
+  
+  
+  /* バースデー */
+  .icon_box{
+    margin-top: 100px;
+  }
+  
+  
+  .indivisual>div{
+    margin-top: 100px;
+  }
+  .indivisual>div>p{
+    height: 130px;
+    font-size: 14px;
+    overflow: scroll;
+  }
+  
+  html{
+    width: 100%;
+    background-image: url(/img/1700_free.jpg) repeat;
+
+  }
+  .main_birthday{
+    margin-left: 0;
+    margin-right: 0;
+  }
+ 
+  section{
+    margin-bottom: 0;
+  }
 }
+
+
+
+@media (max-width:480px)
+{
+  /* saki */
+
+  .topvisual_title h1{
+    font-size: 20px;
+  }
+  
+  .topvisual_name{
+    font-size: 14px;
+  }
+  
+  
+  
+  /* mi */
+  
+  /* f */
+  
+  .indivisual>div{
+    margin-top: 50px;
+  }
+  main{
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .icon_box{
+    margin-top: 60px;
+  }
+  .main_top_calendar{
+    
+    height: 600px;
+  }
+  
+ } 
+
+
+
