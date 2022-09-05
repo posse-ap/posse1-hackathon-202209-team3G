@@ -4,45 +4,48 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  
   <title>入力フォーム</title>
 </head>
 <body>
-  <h1>入力フォーム</h1>
-<form name="form" action="#" method="post">
-	<p>タイトル：<br>
-    <select id="titles">
-      <option value="">以下から選択してください</option>
-      <option value="仲間の居場所つくらずして自分の居場所なし">仲間の居場所つくらずして自分の居場所なし</option>
-      <option value="振り返り主義">振り返り主義</option>
-      <option value="インサイドアウト">インサイドアウト</option>
-      <option value="理解してから理解される">理解してから理解される</option>
-      <option value="深掘力は人格力">深掘力は人格力</option>
-      <option value="嘘をつかないごまかさない">嘘をつかないごまかさない</option>
-      <option value="教えることは教わること">教えることは教わること</option>
-      <option value="「ベンチ行かない？」と言う勇気">「ベンチ行かない？」と言う勇気</option>
-      <option value="本音の対話なくして最高のチームなし">本音の対話なくして最高のチームなし</option>
-      <option value="自ら機会を作り出し、機会によって自らを変えよ">自ら機会を作り出し、機会によって自らを変えよ</option>
-    </select></p>
-	<p>名前：<br>
-    <select id="names">
-      <option value="">以下から選択してください</option>
-      <option value="下鳥文也" class="input-name">下鳥文也</option>
-      <option value="大西美海" class="input-name">大西美海</option>
-      <option value="三木咲乃" class="input-name">三木咲乃</option>
-    </select></p>
-	<p>内容：<br>
-	<textarea name="comment" cols="30" rows="5" id="input-message"></textarea></p>
-  <input type="button" onclick="showMessage()" value="保存">
-</form>
-<div>
-<p id="output-title"></p>
-<p id="output-name"></p>
-<p id="output-message"></p>
-</div>
-<div>
-  <p id="info"></p>
-</div>
-</body>
-<script src="../../js/form.js"></script>
-</html>
+  <div class="form">
+    <h1>入力フォーム</h1>
+    <form name="form" action="#" method="post">
+      <p>タイトル：<br>
+        <select id="titles">
+          <option value="">以下から選択してください</option>
+          <option value="仲間の居場所つくらずして自分の居場所なし">仲間の居場所つくらずして自分の居場所なし</option>
+          <option value="振り返り主義">振り返り主義</option>
+          <option value="インサイドアウト">インサイドアウト</option>
+          <option value="理解してから理解される">理解してから理解される</option>
+          <option value="深掘力は人格力">深掘力は人格力</option>
+          <option value="嘘をつかないごまかさない">嘘をつかないごまかさない</option>
+          <option value="教えることは教わること">教えることは教わること</option>
+          <option value="「ベンチ行かない？」と言う勇気">「ベンチ行かない？」と言う勇気</option>
+          <option value="本音の対話なくして最高のチームなし">本音の対話なくして最高のチームなし</option>
+          <option value="自ら機会を作り出し、機会によって自らを変えよ">自ら機会を作り出し、機会によって自らを変えよ</option>
+        </select></p>
+        <p>名前：<br>
+          <select id="names">
+            <option value="">以下から選択してください</option>
+            <option value="下鳥文也" class="input-name">下鳥文也</option>
+            <option value="大西美海" class="input-name">大西美海</option>
+            <option value="三木咲乃" class="input-name">三木咲乃</option>
+          </select></p>
+          <p>内容：<br>
+            <textarea name="comment" cols="30" rows="5" id="input-message"></textarea></p>
+            <input type="button" onclick="showMessage()" value="保存">
+          </form>
+          <div>
+            <p id="output-title"></p>
+            <p id="output-name"></p>
+            <p id="output-message"></p>
+          </div>
+        </div>
+        
+        <div>
+          <p id="info"></p>
+        </div>
+      </body>
+      <script src="../../js/form.js"></script>
+      </html>
