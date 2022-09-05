@@ -151,8 +151,10 @@ h1{
 }
 main{
   margin-top: 70px;
-  padding-left: 10%;
-  padding-right: 10%;
+}
+.main_birthday{
+padding-left: 10%;
+padding-right: 10%;
 }
 h2{
   text-align: center;
