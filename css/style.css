@@ -109,6 +109,8 @@ p{
 }
 h3{
   text-align: center;
+  font-size: x-large;
+  margin-top: 100px;
 }
 .cp_container{
   max-width: 700px;
@@ -123,6 +125,8 @@ h3{
 h1{
   margin-top: 50px;
   text-align: center;
+  color: rgba(255, 165, 52, 1);
+  margin-bottom: 50px;
 }
 .wrap{
   margin-top: 150px;
@@ -137,6 +141,8 @@ main{
 h2{
   text-align: center;
   color: rgba(255, 165, 52, 1);
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .birthimg{
   border-radius: 50%;
@@ -307,7 +313,7 @@ img{
 }
 .main_birthday>section>h2{
   text-align: center;
-  color: coral;
+  color: rgba(255, 165, 52, 1);
   background-image: url(/img/watermark.jpg);
   height: 100px;
   padding-top: 50px;
