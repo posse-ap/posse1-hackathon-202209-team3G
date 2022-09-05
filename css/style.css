@@ -180,12 +180,16 @@ main{
 img{
   width: 100%;
 }
-h2{
+.main_birthday>section>h2{
   text-align: center;
+  color: coral;
+  background-image: url(/img/watermark.jpg);
+  height: 100px;
+  padding-top: 50px;
+  font-size: 40px;
 }
-h3{
-  text-align: center;
-}
+
+
 /* a */
 
 .main_birthday{
@@ -258,13 +262,19 @@ h3{
 }
 .indivisual>div{
   margin-top: 200px;
+  padding-top: 100px;
 }
-.main_bottom{
+.indivisual>div>p{
+  font-size: 24px;
+}
+#main_bottom{
   width: 100px;
   height: 100px;
-  z-index: 200;
-  margin-right: 10px;
-  margin-bottom: 200px;
+  z-index: 2000000;
+  right: 100px;
+  bottom: 100px;
+  position: fixed;
+  opacity: 0;
 }
 .main_bottom_circle{
   height: 100%;
