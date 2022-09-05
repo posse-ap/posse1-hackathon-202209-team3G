@@ -132,6 +132,16 @@ p{
 
 
 /*miu's workspace*/
+.imgbirth{
+ 
+    width: 280px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: flex;
+    
+  }
+
 .nyuuryoku{
   color: rgba(255, 165, 52, 1);
 
@@ -173,6 +183,7 @@ h1{
 .birthcon{
   display: flex;
   margin-top: 100px;
+  
 }
 main{
   margin-top: 58px;
@@ -188,20 +199,25 @@ h2{
   color: white;
   margin-top: 50px;
   margin-bottom: 30px;
+  font-size: 35px;
 }
 .hunhun{
   color: rgba(255, 165, 52, 1);
   margin-top: 40px;
+  font-size: 35px;
 }
 .birbir{
   margin-top: 40px;
   margin-bottom: 40px;
   color: rgba(255, 165, 52, 1);
+  font-size: 35px;
+  padding-top: 40px;
 }
 .birthimg{
   border-radius: 50%;
   height: 200px;
   width: 100%;
+
 }
 .birthday{
   background: url(/img/bir.PNG) no-repeat center center;
