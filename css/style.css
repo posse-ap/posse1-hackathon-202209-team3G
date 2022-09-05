@@ -187,12 +187,13 @@ span{
   cursor:pointer;
   transition:.3s ease;
 }
-input[type=checkbox]:checked + .la{
+.clicked{
   background: rgba(255, 165, 52, 1);
 }
-input[type=checkbox]:checked + .la:before{
+input[type=checkbox]:checked + .clicked:before{
   left:50px;
 }
+
 .la:before{
   transition:.3s ease;
   content:'';
