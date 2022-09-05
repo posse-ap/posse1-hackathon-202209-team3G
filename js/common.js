@@ -2,7 +2,7 @@
 // sakino
 {
   const state1 = { count: 0 };
-
+  
   const btn1 = document.getElementById('heart1');
   btn1.addEventListener('click', () => {
     const counter1 = document.getElementById('counter1');
@@ -62,33 +62,33 @@
   counter4.innerHTML = value4;
   // localStorage.clear();
 }
-
-{
-//   const numbers = [1,2,3,4];
-
-
-//   numbers.map(number => {
-//     return `<div class="likes_counter">
-//     <p id="counter${number}">0</p>
-//     <p>　likes</p>
-//   </div>
-//   <div class="likes_button" value="save" id="heart${number}">
-//     <img src="../img/heart.png" alt="heart" class="heart_btn">
-//   </div>`;
-// })
-// console.log(numbers);
-// }
-
-// {
-  // const likes = document.querySelectorAll('.likes');
-  // likes.forEach(like => {
-  //   like.innerHTML = `<div class="likes_counter">
-  //   <p class="counter">${states[].count}</p>
-  //   <p>　likes</p>
-  //   </div>
-  //   <div class="likes_button heart" value="save">
-  //   <img src="../img/heart.png" alt="heart" class="heart_btn">
-  //   </div>`;
+  
+  {
+    //   const numbers = [1,2,3,4];
+    
+    
+    //   numbers.map(number => {
+    //     return `<div class="likes_counter">
+    //     <p id="counter${number}">0</p>
+    //     <p>　likes</p>
+    //   </div>
+    //   <div class="likes_button" value="save" id="heart${number}">
+    //     <img src="../img/heart.png" alt="heart" class="heart_btn">
+    //   </div>`;
+    // })
+    // console.log(numbers);
+    // }
+    
+    // {
+    // const likes = document.querySelectorAll('.likes');
+    // likes.forEach(like => {
+    //   like.innerHTML = `<div class="likes_counter">
+    //   <p class="counter">${states[].count}</p>
+    //   <p>　likes</p>
+    //   </div>
+    //   <div class="likes_button heart" value="save">
+    //   <img src="../img/heart.png" alt="heart" class="heart_btn">
+    //   </div>`;
     // likes.innerHTML = `<div class="likes_counter">
     //   <p id="counter">0</p>
     //   <p>　likes</p>
@@ -96,74 +96,29 @@
     // <div class="likes_button" value="save" id="heart">
     //   <img src="../img/heart.png" alt="heart" class="heart_btn">
     // </div>`;
-  // })
-}
-
-{
-  // const states = [
-  //   {id: 1, count: 0},
-  //   {id: 2, count: 0},
-  //   {id: 3, count: 0},
-  //   {id: 4, count: 0},
-  // ];
+    // })
+  }
   
-  // const btns = document.querySelectorAll('.heart');
-  // btns.forEach(btn => {
-  //   btn.addEventListener('click', () => {
-  //     const counters = document.querySelectorAll('.counter');
-  //     const counts = ++states[selectNumber].count;
-      
-  //   })
-  // })
-
-}
-
-
-// miu
-$('input[type=checkbox]').change(function(){
-  counter = 0;
-  clicked = $(this).data('index');
-  $('input[type=checkbox]').each(function(){
-    if($(this)[0].checked){
-      counter++;
-    }
-  });
-  if(counter==3){    
-    toDisable = clicked;
-    while(toDisable==clicked){
-      toDisable=Math.round(Math.random()*2);
-    }
-    $("input:eq("+toDisable+")")[0].checked = false;
-  }
-});
-
-// fumiya
-
-""
-const all_profile = [
   {
-    id: 1,
+    // const states = [
+    //   {id: 1, count: 0},
+    //   {id: 2, count: 0},
+    //   {id: 3, count: 0},
+    //   {id: 4, count: 0},
+    // ];
     
-    nick_name: "さきの",
-    birthday: "3月28日",
+    // const btns = document.querySelectorAll('.heart');
+    // btns.forEach(btn => {
+    //   btn.addEventListener('click', () => {
+    //     const counters = document.querySelectorAll('.counter');
+    //     const counts = ++states[selectNumber].count;
     
-    
-  },
-  {
-    id: 2,
-    nick_name: "みう",
-    birthday: "11月29日",
-    
-  },
-  {
-    id: 3,
-    nick_name: "ふみや",
-    birthday: "1月24日",
-    card: ""
+    //   })
+    // })
     
   }
-];
 
+  // miu
 
 // <div class="set">
 //   <div id="profile">
@@ -185,3 +140,44 @@ window.addEventListener("scroll", () => {
   } else {bottomBtn.style.display = none;}
 });
 
+  // fumiya
+  
+  ""
+  const all_profile = [
+    {
+      id: 1,
+      
+      nick_name: "さきの",
+      birthday: "3月28日",
+      
+      
+    },
+    {
+      id: 2,
+      nick_name: "みう",
+      birthday: "11月29日",
+      
+    },
+    {
+      id: 3,
+      nick_name: "ふみや",
+      birthday: "1月24日",
+      card: ""
+      
+    }
+  ];
+  
+  
+  // <div class="set">
+  //   <div id="profile">
+  //     <div id="pro_img"></div>
+  //     <div id="pro_name"></div>
+  //     <div id="pro_date"></div>
+  //   </div>
+  //   <div id="card_message">
+  //     <div ></div>
+  //     <div></div>
+  //   </div>
+  // </div>
+  
+  

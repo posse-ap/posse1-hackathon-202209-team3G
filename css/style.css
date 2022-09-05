@@ -97,6 +97,14 @@ p{
   text-decoration: none;
 }
 
+.menu-content ul li a{
+  display: none;
+}
+
+#menu-btn-check{
+  display: none;
+}
+
 /*miu's workspace*/
 .speechimg{
   display: flex;
@@ -114,13 +122,13 @@ h3{
 }
 .cp_container{
   max-width: 700px;
-
+  
 }
 .huspeech:not(:root){
   margin: 0 auto;
-
- 
-
+  
+  
+  
 }
 h1{
   margin-top: 50px;
@@ -137,8 +145,8 @@ h1{
 }
 main{
   margin-top: 70px;
- 
- 
+  padding-left: 10%;
+  padding-right: 10%;
 }
 h2{
   text-align: center;
@@ -201,12 +209,13 @@ span{
   cursor:pointer;
   transition:.3s ease
 }
-input[type=checkbox]:checked + .la{
+.clicked{
   background: rgba(255, 165, 52, 1);
 }
-input[type=checkbox]:checked + .la:before{
+input[type=checkbox]:checked + .clicked:before{
   left:50px;
 }
+
 .la:before{
   transition:.3s ease;
   content:'';
@@ -257,63 +266,63 @@ input[type=checkbox]:checked + .la:before{
 /*ボタン*/
 
 .cp_box *, .cp_box *:before, .cp_box *:after {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .cp_box {
-	position: relative;
+  position: relative;
 }
 .cp_box label {
-	position: absolute;
-	z-index: 1;
-	bottom: 0;
-	width: 100%;
-	height: 100px; /* グラデーションの高さ */
-	cursor: pointer;
-	text-align: center;
-	background: linear-gradient(to bottom, rgba(250, 252, 252, 0) 0%, rgba(250, 252, 252, 0.95) 90%);
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+  height: 100px; /* グラデーションの高さ */
+  cursor: pointer;
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(250, 252, 252, 0) 0%, rgba(250, 252, 252, 0.95) 90%);
 }
 /* 開いた時にグラデーションを消す */
 .cp_box input:checked + label {
-	background: inherit; 
+  background: inherit; 
 }
 .cp_box label:after {
-	line-height: 2.5rem;
-	position: absolute;
-	z-index: 2;
-	bottom: 20px;
-	left: 50%;
-	width: 16rem;
-	font-family: FontAwesome;
-	content: '⬇︎'' 続きをよむ';
-	transform: translate(-50%, 0);
-	letter-spacing: 0.05em;
-	color: #ffffff;
-	border-radius: 20px;
-	background-color: rgba(27, 37, 56, 1);
+  line-height: 2.5rem;
+  position: absolute;
+  z-index: 2;
+  bottom: 20px;
+  left: 50%;
+  width: 16rem;
+  font-family: FontAwesome;
+  content: '⬇︎'' 続きをよむ';
+  transform: translate(-50%, 0);
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  border-radius: 20px;
+  background-color: rgba(27, 37, 56, 1);
 }
 .cp_box input {
-	display: none;
+  display: none;
 }
 /* 開く前に見えている部分の高さ */
 .cp_box .cp_container {
-	overflow: hidden;
-	height: 250px; 
-	transition: all 0.5s;
+  overflow: hidden;
+  height: 250px; 
+  transition: all 0.5s;
 }
 /* display: none ; 閉じるボタンを消す場合解放 */
 .cp_box input:checked + label {
-
+  
 }
 .cp_box input:checked + label:after {
-	font-family: FontAwesome;
-	content: '⬆︎'' 閉じる';
+  font-family: FontAwesome;
+  content: '⬆︎'' 閉じる';
 }
 /* 閉じるボタンのbottomからの位置 */
 .cp_box input:checked ~ .cp_container {
-	height: auto;
-	padding-bottom: 80px; 
-	transition: all 0.5s;
+  height: auto;
+  padding-bottom: 80px; 
+  transition: all 0.5s;
 }
 .todays_harbors{
   background: url(/img/harbors:a.jpeg) no-repeat center center;
@@ -331,9 +340,9 @@ input[type=checkbox]:checked + .la:before{
  
  .main-inner.d-grid.gap-3{
   width: 100%;
- }
- 
- .todays_harbors.p-2.bg-light.border{
+}
+
+.todays_harbors.p-2.bg-light.border{
   justify-content: center;
  }
 
@@ -398,18 +407,18 @@ img{
 }
 .boxes>li{
   margin-left: 2%;
-  width: 15%;
+  width: 12%;
   align-items: center;
-  }
+}
 .boxes>li::before{
   content: '';
   display: block;
-  padding-top: 15%;
+  padding-top: 12%;
 }
 
 .boxes>li>a>img{
   width: 100%;
- 
+  
   border-radius: 45%;
 }
 .boxes>li>p{
@@ -419,18 +428,7 @@ img{
 
 
 
-/* .card_message{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-.card{
-  margin-right: 5%;
-}
-.message{
-  align-items: center;
-  padding: 50px 0;
-} */
+
 .indivisual{
   margin: 0 20%;
 }
@@ -460,52 +458,172 @@ img{
 
 @media (max-width:720px) {
   /* saki */
-
+  .topvisual_title h1{
+    font-size: 28px;
+  }
+  
+  
   /* mi */
-
+  
   /* f */
   /* トップ */
-  .harlist{
-    
-   
+  .harlist{  
+    /* display: block; */
+    /* margin-left: 10%; */
+    /* margin-right: 10%; */
+  }
+  .button05{
+    /* width: 70%; */
+    margin-bottom: 10px
+  }
+  .button05::before{
+    /* display: none; */
   }
   /* バースデー */
-  @function vw($width, $px) {
-    @return $px / $width * 100vw;
+  .icon_box{
+    margin-top: 100px;
   }
   
   /* きつい */
-  .topvisual_ship :nth-child(even){
-    flex-direction: row-reverse ;
+  .topvisual_container:nth-child(even){
+    flex-direction: column-reverse;
+    display: flex;
   }
-  .topvisual_container{
+  .topvisual_container:nth-child(odd){
     display: block;
   }
   .topvisual_img{
     margin: 0 auto;
   }
   /* きつい */
-
-  .indivisual>div>p{
   
- 
-  /* max-width: 700px; */
-  height: 130px;
-  font-size: 14px;
-  overflow: scroll;
+  .indivisual>div>p{
+    
+    
+    /* max-width: 700px; */
+    height: 130px;
+    font-size: 14px;
+    overflow: scroll;
   }
-
+  
   html{
     width: 100%;
   }
+}
 
-  
+  .main_birthday{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  h2{
+    font
+  }
 
-@media (max-width:480px){
+
+@media (max-width:480px)
+{
   /* saki */
+  .topvisual_container{
+    margin-bottom: 70px;
+  }
 
+  .topvisual_title h1{
+    font-size: 30px;
+  }
+  
+  .topvisual_name{
+    font-size: 14px;
+  }
+  
+  /*ハンバーガーメニュー*/
+  .header_nav{
+    display: none;
+  }
+  
+  
+  .menu-btn{
+    position: fixed;
+    top: 0px;
+    right: 8px;
+    display: flex;
+    height: 53px;
+    width: 47px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+  }
+  .menu-btn span:before,
+  .menu-btn span:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 25px;
+    background-color: black;
+    position: absolute;
+  }
+  .menu-btn span:before {
+    bottom: 20px;
+  }
+  .menu-btn span:after {
+    top: 20px;
+  }
+  #menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 50%;
+    transform: rotate(45deg);
+  }
+  #menu-btn-check:checked ~ .menu-btn span::after {
+    top: 48%;
+    transform: rotate(-45deg);
+  }
+  
+  /*ハンバーガーメニューのコンテントの実装*/
+  .menu-content{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 100%;
+    background-color: white;
+    z-index: 80;
+    transition: all 0.5s;
+    text-align: center;
+    padding-top: 170px;
+  }
+  #menu-btn-check {
+    display: none;
+  }
+  #menu-btn-check:checked ~ .menu-content {
+    left: 0;/*メニューを画面内へ*/
+  }
+  .p-header_logo{
+    z-index: 100;
+  }
+  .menu-content ul li a{
+    font-family: "Noto Sans JP";
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+  }
+  #menu-btn-check:checked ~ .menu-content ul li a{
+    display: block;
+  }
+  
+  
   /* mi */
   
   /* f */
 
+  main{
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .icon_box{
+    margin-top: 60px;
+  }
+ } 
+
+
+  
 }
+
+
