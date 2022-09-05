@@ -106,12 +106,36 @@ p{
 }
 
   /*フォームページ*/
-  .form h1{
-    text-align: center;
+.titi{
+   width: 90%;
+   margin: 0 auto;
+   max-width: 500px;
+   margin-top: 50px;
   }
+.nana{
+  width: 90%;
+  margin: 0 auto;
+  max-width: 500px;
+  margin-top: 20px;
+  }
+.nainai{
+  width: 90%;
+   margin: 0 auto;
+   max-width: 500px;
+   margin-top: 20px;
+}  
+.nyuuryoku{
+    
+  color: rgba(255, 165, 52, 1);
+
+}
 
 
 /*miu's workspace*/
+.nyuuryoku{
+  color: rgba(255, 165, 52, 1);
+
+}
 .speechimg{
   display: flex;
   gap: 50px;
@@ -124,7 +148,7 @@ p{
 h3{
   text-align: center;
   font-size: x-large;
-  margin-top: 100px;
+  margin-top: 40px;
 }
 .cp_container{
   max-width: 700px;
@@ -148,6 +172,7 @@ h1{
 
 .birthcon{
   display: flex;
+  margin-top: 100px;
 }
 main{
   margin-top: 70px;
@@ -158,23 +183,34 @@ padding-right: 10%;
 }
 h2{
   text-align: center;
+  
  
-  margin-top: 30px;
-  margin-bottom: 30px;
+  
 }
 .harhar{
   color: white;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 .hunhun{
   color: rgba(255, 165, 52, 1);
+  margin-top: 40px;
 }
 .birbir{
+  margin-top: 40px;
+  margin-bottom: 40px;
   color: rgba(255, 165, 52, 1);
 }
 .birthimg{
   border-radius: 50%;
   height: 200px;
   width: 100%;
+}
+.birthday{
+  background: url(/img/bir.PNG) no-repeat center center;
+    background-size: cover;
+    padding-bottom: 50px;
+
 }
 
 /*チェックボックス*/
@@ -386,6 +422,7 @@ img{
 }
 .main_top_calendar{
   justify-content: center;
+  height: 1200px;
 }
 .calendar_box{
   margin-left: 5%;
@@ -446,6 +483,8 @@ img{
 }
 .indivisual>div>p{
   font-size: 24px;
+  height: 200px;
+  overflow: scroll;
 }
 #main_bottom{
   width: 100px;
@@ -474,6 +513,12 @@ img{
   .topvisual_title h1{
     font-size: 28px;
   }
+
+  .main_top_calendar{
+    
+    height: 600px;
+  }
+
   
     /*ハンバーガーメニュー*/
     .header_nav{
@@ -547,46 +592,28 @@ img{
     #menu-btn-check:checked ~ .menu-content ul li a{
       display: block;
     }
-  
+
   
   /* mi */
   
   /* f */
   /* トップ */
-  .harlist{  
-    /* display: block; */
-    /* margin-left: 10%; */
-    /* margin-right: 10%; */
-  }
+  
   .button05{
     /* width: 70%; */
     margin-bottom: 10px
   }
-  .button05::before{
-    /* display: none; */
-  }
+  
   /* バースデー */
   .icon_box{
     margin-top: 100px;
   }
   
-  /* きつい */
-  .topvisual_container:nth-child(even){
-    flex-direction: column-reverse;
-    display: flex;
-  }
-  .topvisual_container:nth-child(odd){
-    display: block;
-  }
-  .topvisual_img{
-    margin: 0 auto;
-  }
-  /* きつい */
   
+  .indivisual>div{
+    margin-top: 100px;
+  }
   .indivisual>div>p{
-    
-    
-    /* max-width: 700px; */
     height: 130px;
     font-size: 14px;
     overflow: scroll;
@@ -602,7 +629,10 @@ img{
     margin-right: 0;
   }
   h2{
-    font
+    font-size: 10px;
+  }
+  section{
+    margin-bottom: 0;
   }
 
 
@@ -623,7 +653,10 @@ img{
   /* mi */
   
   /* f */
-
+  
+  .indivisual>div{
+    margin-top: 50px;
+  }
   main{
     padding-left: 3%;
     padding-right: 3%;
@@ -631,10 +664,12 @@ img{
   .icon_box{
     margin-top: 60px;
   }
+  .main_top_calendar{
+    
+    height: 600px;
+  }
+  
  } 
 
-
-  
-}
 
 
