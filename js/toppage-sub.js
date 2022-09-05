@@ -22,11 +22,9 @@ window.onload = () => {
   const save = localStorage.getItem('save');  
   let i = 0;
   if(data === 'true'){
-    const clicked = document.querySelectorAll('.la');
+    const threeOne = document.getElementById('3-1');
 
-    clicked.forEach(click => 
-      click.setAttribute('class', 'la clicked')
-      )
+    threeOne.setAttribute('class', 'la clicked')
       input_checked.setAttribute('checked', 'checked')
     }
 

@@ -175,7 +175,7 @@ h1{
   margin-top: 100px;
 }
 main{
-  margin-top: 70px;
+  margin-top: 58px;
 }
 .main_birthday{
 padding-left: 10%;
@@ -183,9 +183,6 @@ padding-right: 10%;
 }
 h2{
   text-align: center;
-  
- 
-  
 }
 .harhar{
   color: white;
@@ -622,18 +619,18 @@ img{
   html{
     width: 100%;
   }
-}
-
   .main_birthday{
     margin-left: 0;
     margin-right: 0;
   }
   h2{
-    font-size: 10px;
+    font-size: 20px;
   }
   section{
     margin-bottom: 0;
   }
+}
+
 
 
 @media (max-width:480px)
