@@ -97,6 +97,14 @@ p{
   text-decoration: none;
 }
 
+.menu-content ul li a{
+  display: none;
+}
+
+#menu-btn-check{
+  display: none;
+}
+
 /*miu's workspace*/
 .speechimg{
   display: flex;
@@ -454,6 +462,10 @@ img{
 
 @media (max-width:720px) {
   /* saki */
+  .topvisual_title h1{
+    font-size: 28px;
+  }
+
 
   /* mi */
 
@@ -469,10 +481,11 @@ img{
   }
   
   /* きつい */
-  .topvisual_ship :nth-child(even){
-    flex-direction: row-reverse ;
+  .topvisual_container:nth-child(even){
+    flex-direction: column-reverse;
+    display: flex;
   }
-  .topvisual_container{
+  .topvisual_container:nth-child(odd){
     display: block;
   }
   .topvisual_img{
@@ -492,11 +505,92 @@ img{
   html{
     width: 100%;
   }
-
+}
   
 
 @media (max-width:480px){
   /* saki */
+  .topvisual_title h1{
+    font-size: 20px;
+  }
+  
+  .topvisual_name{
+    font-size: 14px;
+  }
+
+  /*ハンバーガーメニュー*/
+.header_nav{
+  display: none;
+}
+
+
+.menu-btn{
+  position: fixed;
+  top: 0px;
+  right: 8px;
+  display: flex;
+  height: 53px;
+  width: 47px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+}
+.menu-btn span:before,
+.menu-btn span:after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 25px;
+  background-color: black;
+  position: absolute;
+}
+.menu-btn span:before {
+  bottom: 20px;
+}
+.menu-btn span:after {
+  top: 20px;
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+  bottom: 50%;
+  transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+  top: 48%;
+  transform: rotate(-45deg);
+}
+
+  /*ハンバーガーメニューのコンテントの実装*/
+  .menu-content{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 100%;
+    background-color: white;
+    z-index: 80;
+    transition: all 0.5s;
+    text-align: center;
+    padding-top: 170px;
+  }
+  #menu-btn-check {
+    display: none;
+  }
+  #menu-btn-check:checked ~ .menu-content {
+    left: 0;/*メニューを画面内へ*/
+  }
+  .p-header_logo{
+    z-index: 100;
+  }
+  .menu-content ul li a{
+    font-family: "Noto Sans JP";
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+  }
+  #menu-btn-check:checked ~ .menu-content ul li a{
+    display: block;
+  }
+
 
   /* mi */
   
