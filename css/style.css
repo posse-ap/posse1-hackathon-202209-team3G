@@ -219,7 +219,7 @@ h2{
 
 }
 .birthday{
-  background: url(/img/bir.PNG) no-repeat center center;
+  background: url(../img/bir.PNG) no-repeat center center;
     background-size: cover;
     padding-bottom: 50px;
     
@@ -385,7 +385,7 @@ input[type=checkbox]:checked + .clicked:before{
   transition: all 0.5s;
 }
 .todays_harbors{
-  background: url(/img/harbors:a.jpeg) no-repeat center center;
+  background: url(../img/harbors:a.jpeg) no-repeat center center;
     background-size: cover;
     padding-bottom: 50px;
 }
@@ -425,7 +425,7 @@ img{
 .main_birthday>section>h2{
   text-align: center;
   color: rgba(255, 165, 52, 1);
-  background-image: url(/img/watermark.jpg);
+  background-image: url(../img/watermark.jpg);
   height: 100px;
   padding-top: 50px;
   font-size: 40px;
@@ -437,7 +437,7 @@ img{
 .main_birthday{
   margin-left: 15%;
   margin-right: 15%;
-  background: url(/img/1700_free.jpg) repeat;
+  background: url(../img/1700_free.jpg) repeat;
 }
 .main_birthday>section{
   width: 100%;
@@ -705,7 +705,7 @@ img{
   
   html{
     width: 100%;
-    background-image: url(/img/1700_free.jpg) repeat;
+    background-image: url(../img/1700_free.jpg) repeat;
 
   }
   .main_birthday{
